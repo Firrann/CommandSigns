@@ -163,6 +163,7 @@ public class SignExecutor {
 						+ player.getLocation().getBlockZ());
 				line = line.replaceAll("(?iu)<name>", "" + player.getName());
 				line = line.replaceAll("(?iu)<player>", "" + player.getName());
+				line = line.replaceAll("(?iu)<uuid>", "" + player.getUniqueId());
 				String[] addr = player.getAddress().toString().split("/");
 				line = line.replaceAll("(?iu)<ip>",
 						"" + addr[addr.length - 1].split(":")[0]);
